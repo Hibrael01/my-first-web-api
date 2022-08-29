@@ -38,6 +38,7 @@ public class UsuarioController {
 	
 	@PostMapping
 	public void postUser(@RequestBody Usuario usuario) {
+		System.out.println("Teste Post");
 		repository.save(usuario);
 	}
 	
